@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .option { padding: 10px; margin: 5px; border: 1px solid #ccc; cursor: pointer; }
+    .option:hover { background-color: #f0f0f0; }
+    .option.selected { background-color: #d0e0ff; }
+    button { margin: 10px; padding: 10px; }
+    #quiz, #result { max-width: 600px; margin: auto; }
+    #feedback { color: red; }
+  </style>
+</head>
+<body>
+  <div id="quiz">
+    <div id="timer">Time Left: 30:00</div>
+    <div id="question"></div>
+    <div id="options"></div>
+    <div id="feedback"></div>
+    <button id="prev-btn" onclick="prevQuestion()">Previous</button>
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+    <button id="submit-btn" onclick="submitQuiz()" style="display: none;">Submit</button>
+  </div>
+  <div id="result" style="display: none;">
+    <div id="score"></div>
+    <button onclick="restartQuiz()">Restart Quiz</button>
+  </div>
+  <script src="quiz.js"></script> <!-- Save the JavaScript code in quiz.js -->
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
